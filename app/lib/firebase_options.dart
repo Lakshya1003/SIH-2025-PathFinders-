@@ -24,11 +24,7 @@ class DefaultFirebaseOptions {
         return android;
       case TargetPlatform.iOS:
         return ios;
-      case TargetPlatform.macOS:
-        return macos;
-      case TargetPlatform.windows:
-        return windows;
-      case TargetPlatform.linux:
+        case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
           'you can reconfigure this by running the FlutterFire CLI again.',
@@ -41,48 +37,30 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyAX_BL0-IjbWyZCNH9H9UA3O9QOtFN5F88',
-    appId: '1:108562577334:web:bda71dec561134a326b317',
-    messagingSenderId: '108562577334',
-    projectId: 'attendance-app-eac03',
-    authDomain: 'attendance-app-eac03.firebaseapp.com',
-    storageBucket: 'attendance-app-eac03.firebasestorage.app',
-    measurementId: 'G-J7Z24YE0T3',
+     apiKey: "AIzaSyCJvEiMcmvnwxKjLjHA9_WRQQn8tfOzCNg",
+      authDomain: "attandence-app-3a817.firebaseapp.com",
+      projectId: "attandence-app-3a817",
+      storageBucket: "attandence-app-3a817.firebasestorage.app",
+      messagingSenderId: "19185238714",
+      appId: "1:19185238714:web:ab89b4e486eb47188d7883",
+      measurementId: "G-NW0BM4FSDP"
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBfvCzRKA757zXFD8FA-FGbHpjfF0575P0',
-    appId: '1:108562577334:android:d9e0718e0c6587e126b317',
-    messagingSenderId: '108562577334',
-    projectId: 'attendance-app-eac03',
-    storageBucket: 'attendance-app-eac03.firebasestorage.app',
+    apiKey: 'AIzaSyAxxtYihoLUPMQhh9o2a3pXUJGKbERY8l4',
+    appId: '1:19185238714:android:1dba7195f5b307448d7883',
+    messagingSenderId: '19185238714',
+    projectId: 'attandence-app-3a817',
+    storageBucket: 'attandence-app-3a817.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCruzhtBEuGHbYf9slhO9XfIeC1d-_R9Dw',
-    appId: '1:108562577334:ios:87eae6522721d58026b317',
-    messagingSenderId: '108562577334',
-    projectId: 'attendance-app-eac03',
-    storageBucket: 'attendance-app-eac03.firebasestorage.app',
-    iosBundleId: 'com.example.attendanceApp',
+    apiKey: 'AIzaSyDt7ewtC0wzGUKMaGDDmd_ohxtRtOAH8kg',
+    appId: '1:19185238714:ios:70b8f68c23571ffe8d7883',
+    messagingSenderId: '19185238714',
+    projectId: 'attandence-app-3a817',
+    storageBucket: 'attandence-app-3a817.firebasestorage.app',
+    iosBundleId: 'com.example.CampusOne',
   );
 
-  static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyCruzhtBEuGHbYf9slhO9XfIeC1d-_R9Dw',
-    appId: '1:108562577334:ios:87eae6522721d58026b317',
-    messagingSenderId: '108562577334',
-    projectId: 'attendance-app-eac03',
-    storageBucket: 'attendance-app-eac03.firebasestorage.app',
-    iosBundleId: 'com.example.attendanceApp',
-  );
-
-  static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyAX_BL0-IjbWyZCNH9H9UA3O9QOtFN5F88',
-    appId: '1:108562577334:web:7d767432c89de4df26b317',
-    messagingSenderId: '108562577334',
-    projectId: 'attendance-app-eac03',
-    authDomain: 'attendance-app-eac03.firebaseapp.com',
-    storageBucket: 'attendance-app-eac03.firebasestorage.app',
-    measurementId: 'G-DE42G49784',
-  );
 }
