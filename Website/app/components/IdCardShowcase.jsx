@@ -117,7 +117,7 @@ export default function IdCardShowcase() {
                   {/* Footer */}
                   <div className="bg-muted p-3 text-center text-xs text-muted-foreground">
                     <p>If found, please return to Delhi Public School, Sector 45, Gurugram</p>
-                    <p>Powered by PresentSir</p>
+                    <p>Powered by CampusOne</p>
                   </div>
                 </div>
 
@@ -231,7 +231,7 @@ export default function IdCardShowcase() {
                   {/* Footer */}
                   <div className="bg-muted p-3 text-center text-xs text-muted-foreground">
                     <p>If found, please return to Delhi Public School, Sector 45, Gurugram</p>
-                    <p>Powered by PresentSir</p>
+                    <p>Powered by CampusOne</p>
                   </div>
                 </div>
 
@@ -251,7 +251,7 @@ export default function IdCardShowcase() {
               <div>
                 <h3 className="text-2xl font-bold mb-4">Digital ID Cards</h3>
                 <p className="text-muted-foreground">
-                  PresentSir provides secure digital ID cards for both students and teachers. These cards can be
+                  CampusOne provides secure digital ID cards for both students and teachers. These cards can be
                   accessed through the mobile app and used for:
                 </p>
 

@@ -37,7 +37,7 @@ export default function MobileAppShowcase() {
 
   // TEACHER DUMMY DATA
   const teacherData = {
-    title: "PresentSir Teacher",
+    title: "CampusOne Teacher",
     welcome: "Mrs. Sharma",
     date: "Tuesday, May 6, 2025",
     profile: {
@@ -170,7 +170,7 @@ export default function MobileAppShowcase() {
 
   // STUDENT DUMMY DATA
   const studentData = {
-    title: "PresentSir Student",
+    title: "CampusOne Student",
     welcome: "Rahul",
     date: "Tuesday, May 6, 2025",
     profile: {

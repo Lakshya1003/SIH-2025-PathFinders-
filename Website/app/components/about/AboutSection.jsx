@@ -4,7 +4,7 @@ import TeamSection from '../TeamSection'
 export default function AboutSection() {
   return (
     <div className="mt-0 rounded-b-lg border-x border-b bg-white p-6">
-      <h2 className="text-xl font-semibold">Welcome to Present Sir</h2>
+      <h2 className="text-xl font-semibold">Welcome to CampusOne</h2>
       <p className="text-sm text-gray-500">
         The ultimate school management solution
       </p>
@@ -17,7 +17,7 @@ export default function AboutSection() {
       <div className="mt-6">
         <h3 className="text-lg font-medium">Our Story</h3>
         <p className="mt-2 text-sm leading-relaxed text-gray-600">
-          Present Sir was founded with a simple mission: to transform the way
+          CampusOne was founded with a simple mission: to transform the way
           schools manage their day-to-day operations, especially attendance
           tracking. We recognize that teachers spend valuable time on
           administrative tasks that could be better utilized for education. Our
@@ -25,7 +25,7 @@ export default function AboutSection() {
           what matters most - teaching and nurturing students.
         </p>
         <p className="mt-4 text-sm leading-relaxed text-gray-600">
-          The idea for Present Sir was born out of our founder's experience in
+          The idea for CampusOne was born out of our founder's experience in
           the education sector, where he witnessed firsthand the challenges
           faced by schools in managing attendance, tracking student performance,
           and communicating with parents. By leveraging technology, we've
@@ -52,7 +52,7 @@ export default function AboutSection() {
       <div className="mt-8">
         <h3 className="text-lg font-medium">Our Mission</h3>
         <p className="mt-2 text-sm leading-relaxed text-gray-600">
-          At Present Sir, we believe that every educational institution deserves
+          At CampusOne, we believe that every educational institution deserves
           access to powerful, intuitive management tools. Our mission is to
           streamline administrative processes, enhance communication between
           stakeholders, and provide valuable insights through data analytics,

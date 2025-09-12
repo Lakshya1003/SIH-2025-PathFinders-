@@ -1,42 +1,58 @@
-import { Inter } from "next/font/google"
-import "@/app/globals.css"
-import PWAInstaller from './components/PWAInstaller'
-import Script from "next/script"
-import { Toaster } from "@/components/ui/toaster"
+import { ReactNode } from "react";
+import { Inter } from "next/font/google";
+import "@/app/globals.css";
+import Script from "next/script";
+import { Toaster } from "@/components/ui/toaster";
 
-const inter = Inter({ subsets: ["latin"] })
+const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
-  title: "PresentSir",
+interface ManualMetadata {
+  title: string | null;
+  description?: string | null;
+  manifest?: string | null;
+  appleWebApp?: {
+    title?: string | null;
+    statusBarStyle?: "default" | "black" | "black-translucent" | null;
+  } | null;
+  icons?: {
+    icon?: string | null;
+    apple?: string | null;
+  } | null;
+  themeColor?: string | null;
+}
+
+export const metadata: ManualMetadata = {
+  title: "CampusOne",
   description:
     "Streamline attendance, manage classes, track performance, and more with our comprehensive school management system.",
   manifest: "/manifest.json",
   appleWebApp: {
-    title: "PresentSir",
+    title: "CampusOne",
     statusBarStyle: "default",
-  }
-}
+  },
+  icons: {
+    icon: "/icons/present_sir_dark_logo.png",
+    apple: "/icons/present_sir_dark_logo.png",
+  },
+};
 
 export const viewport = {
-  width: 'device-width',
+  width: "device-width",
   initialScale: 1.0,
   maximumScale: 1.0,
   userScalable: false,
-  themeColor: '#4f46e5',
+  themeColor: "#4f46e5",
+};
+
+interface RootLayoutProps {
+  children: ReactNode;
 }
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <link rel="manifest" href="/manifest.json" />
-        <link rel="icon" href="/icons/present_sir_dark_logo.png" />
-        <link rel="apple-touch-icon" href="/icons/present_sir_dark_logo.png" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-      </head>
       <body className={inter.className}>
         {children}
-        <PWAInstaller />
         <Toaster />
         <Script
           id="register-service-worker"
@@ -60,5 +76,5 @@ export default function RootLayout({ children }) {
         />
       </body>
     </html>
-  )
+  );
 }
