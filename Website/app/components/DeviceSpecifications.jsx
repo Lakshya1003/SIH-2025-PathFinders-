@@ -15,13 +15,14 @@ export default function DeviceSpecifications() {
         <div className="relative">
           {/* Device mockup */}
           <div
-            className={`relative bg-card border-4 border-border rounded-xl shadow-xl overflow-hidden w-64 h-96 transition-transform duration-1000 ${rotateDevice ? "rotate-[360deg]" : ""
-              }`}
+            className={`relative bg-card border-4 border-border rounded-xl shadow-xl overflow-hidden w-64 h-96 transition-transform duration-1000 ${
+              rotateDevice ? "rotate-[30deg]" : ""
+            }`}
           >
             {/* Device screen */}
             <div className="p-4 bg-primary">
               <div className="flex justify-between items-center">
-                <div className="text-primary-foreground font-semibold">CampusOne</div>
+                <div className="text-primary-foreground font-semibold">PresentSir</div>
                 <div className="text-primary-foreground text-sm">09:41</div>
               </div>
             </div>
@@ -69,7 +70,7 @@ export default function DeviceSpecifications() {
         <div className="mb-6">
           <h3 className="text-2xl font-bold mb-4">Compact & Powerful</h3>
           <p className="text-muted-foreground mb-4">
-            The CampusOne device is designed specifically for classroom use. It's small enough to hold in your hand,
+            The PresentSir device is designed specifically for classroom use. It's small enough to hold in your hand,
             yet powerful enough to manage attendance for all your classes.
           </p>
           <Button onClick={() => setRotateDevice(!rotateDevice)} variant="outline">
@@ -179,7 +180,7 @@ export default function DeviceSpecifications() {
               </div>
               <div>
                 <h4 className="font-medium">Mobile App Sync</h4>
-                <p className="text-sm text-muted-foreground">Seamless synchronization with the CampusOne mobile app</p>
+                <p className="text-sm text-muted-foreground">Seamless synchronization with the PresentSir mobile app</p>
               </div>
             </div>
           </TabsContent>

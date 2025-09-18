@@ -52,7 +52,7 @@ export default function TermsOfService() {
       icon: FileText,
       title: 'Acceptance of Terms',
       content:
-        'By accessing or using CampusOne.in, you agree to be bound by these Terms of Service and our Privacy Policy. If you do not agree to these terms, please do not use our website or attendance management services. Your continued use of our platform constitutes acceptance of any updates to these terms.',
+        'By accessing or using PresentSir.in, you agree to be bound by these Terms of Service and our Privacy Policy. If you do not agree to these terms, please do not use our website or attendance management services. Your continued use of our platform constitutes acceptance of any updates to these terms.',
     },
     {
       icon: User,
@@ -87,13 +87,13 @@ export default function TermsOfService() {
       icon: Scale,
       title: 'Intellectual Property',
       content:
-        'All content on CampusOne.in, including but not limited to text, graphics, logos, images, software, and design elements, is the property of CampusOne.in or its content suppliers and is protected by intellectual property laws. You may not reproduce, distribute, or create derivative works without our express written permission.',
+        'All content on PresentSir.in, including but not limited to text, graphics, logos, images, software, and design elements, is the property of PresentSir.in or its content suppliers and is protected by intellectual property laws. You may not reproduce, distribute, or create derivative works without our express written permission.',
     },
     {
       icon: AlertTriangle,
       title: 'Limitation of Liability',
       content:
-        'CampusOne.in shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or in connection with your use of the website or attendance management services. Our total liability shall not exceed the amount paid by you for our services in the twelve months preceding the claim.',
+        'PresentSir.in shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or in connection with your use of the website or attendance management services. Our total liability shall not exceed the amount paid by you for our services in the twelve months preceding the claim.',
     },
     {
       icon: Shield,
@@ -233,7 +233,7 @@ export default function TermsOfService() {
                 </div>
                 <p className="text-gray-600 mb-2">Email</p>
                 <p className="text-black font-semibold text-lg">
-                  legal@CampusOne.in
+                  legal@presentsir.in
                 </p>
               </div>
               <div className="text-center">

@@ -30,7 +30,6 @@ const nextConfig = {
       'm.media-amazon.com',
       'ui-avatars.com',
       'via.placeholder.com',
-      'images.unsplash.com',
     ],
   },
 

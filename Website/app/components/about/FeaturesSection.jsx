@@ -4,7 +4,7 @@ export default function FeaturesSection() {
   return (
     <div className="mt-0 rounded-b-lg border-x border-b bg-white p-6">
       <h2 className="text-xl font-semibold">Platform Features</h2>
-      <p className="text-sm text-gray-500">Discover all the powerful tools CampusOne offers</p>
+      <p className="text-sm text-gray-500">Discover all the powerful tools Present Sir offers</p>
 
       <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
         <FeatureCard
@@ -67,7 +67,7 @@ export default function FeaturesSection() {
         <h3 className="text-lg font-medium mb-4">Product Roadmap</h3>
         <div className="space-y-6">
           <div className="border-l-4 border-green-500 pl-4">
-            <h4 className="font-medium">CampusOne Mobile App</h4>
+            <h4 className="font-medium">Present Sir Mobile App</h4>
             <p className="mt-1 text-sm text-gray-600">
               Coming soon - A dedicated mobile application for teachers and parents to access all features on the go, including instant notifications and attendance tracking.
             </p>

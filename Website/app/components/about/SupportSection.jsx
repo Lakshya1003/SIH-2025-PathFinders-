@@ -4,7 +4,7 @@ export default function SupportSection() {
   return (
     <div className="mt-0 rounded-b-lg border-x border-b bg-white p-6">
       <h2 className="text-xl font-semibold">Support Resources</h2>
-      <p className="text-sm text-gray-500">Get help and learn how to use CampusOne effectively</p>
+      <p className="text-sm text-gray-500">Get help and learn how to use Present Sir effectively</p>
 
       <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2">
         <div className="rounded-lg border p-6 hover:shadow-md transition-shadow">
@@ -15,7 +15,7 @@ export default function SupportSection() {
             <div>
               <h3 className="text-lg font-medium">Documentation</h3>
               <p className="mt-1 text-sm text-gray-500">
-                Comprehensive guides and tutorials to help you make the most of CampusOne
+                Comprehensive guides and tutorials to help you make the most of Present Sir
               </p>
               <button className="mt-4 w-full rounded-lg border border-gray-300 py-2 text-sm font-medium hover:bg-gray-50">
                 View Documentation

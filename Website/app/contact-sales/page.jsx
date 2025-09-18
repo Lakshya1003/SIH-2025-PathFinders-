@@ -3,9 +3,6 @@
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
-import { useEffect, useState } from 'react'
-import Link from 'next/link'
-
 import {
   Select,
   SelectContent,
@@ -13,9 +10,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select'
-
 import { Card, CardContent } from '@/components/ui/card'
-
 import {
   Mail,
   Phone,
@@ -28,33 +23,21 @@ import {
   CheckCircle,
   UserCheck,
 } from 'lucide-react'
+import Link from 'next/link'
 
+// Floating attendance devices
 function FloatingDevices() {
-  const [positions, setPositions] = useState([])
-
-  useEffect(() => {
-    const generated = [...Array(6)].map(() => ({
-      left: `${Math.random() * 100}%`,
-      top: `${Math.random() * 100}%`,
-      animationDelay: `${Math.random() * 3}s`,
-      animationDuration: `${4 + Math.random() * 2}s`,
-    }))
-    setPositions(generated)
-  }, [])
-
-  if (positions.length === 0) return null // Don't render on server / initial render
-
   return (
     <div className="absolute inset-0 overflow-hidden pointer-events-none">
-      {positions.map((pos, i) => (
+      {[...Array(6)].map((_, i) => (
         <div
           key={i}
           className="absolute animate-float opacity-20"
           style={{
-            left: pos.left,
-            top: pos.top,
-            animationDelay: pos.animationDelay,
-            animationDuration: pos.animationDuration,
+            left: `${Math.random() * 100}%`,
+            top: `${Math.random() * 100}%`,
+            animationDelay: `${Math.random() * 3}s`,
+            animationDuration: `${4 + Math.random() * 2}s`,
           }}
         >
           {i % 3 === 0 ? (
@@ -69,7 +52,6 @@ function FloatingDevices() {
     </div>
   )
 }
-
 
 // Attendance Dashboard Mockup
 function AttendanceDashboard() {
@@ -125,7 +107,7 @@ export default function ContactSales() {
             <div className="absolute -top-4 -right-4 w-8 h-8 border-2 border-black rounded-full animate-pulse" />
           </div>
           <p className="text-xl text-gray-700 max-w-2xl mx-auto leading-relaxed">
-            Transform your educational institution with CampusOne's
+            Transform your educational institution with PresentSir's
             cutting-edge attendance management technology. Our experts are ready
             to craft the perfect solution for your needs.
           </p>
@@ -145,10 +127,10 @@ export default function ContactSales() {
                   Direct line to our sales specialists
                 </p>
                 <a
-                  href="mailto:sales@CampusOne.in"
+                  href="mailto:sales@presentsir.in"
                   className="text-black font-semibold hover:text-gray-700 transition-colors text-lg"
                 >
-                  sales@CampusOne.in
+                  sales@presentsir.in
                 </a>
               </div>
             </CardContent>
@@ -368,7 +350,7 @@ export default function ContactSales() {
             <Card className="bg-white border-gray-200 shadow-lg">
               <CardContent className="p-8">
                 <h2 className="text-3xl font-bold mb-6">
-                  Why Choose CampusOne?
+                  Why Choose PresentSir?
                 </h2>
                 <p className="text-gray-600 text-lg mb-8">
                   Leading the digital transformation in education with

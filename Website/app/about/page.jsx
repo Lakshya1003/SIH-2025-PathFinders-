@@ -22,7 +22,7 @@ export default function AboutPage() {
     <div className="p-6 bg-gray-50">
       <div className="flex items-center justify-between">
         <div>
-          <h1 className="text-2xl font-semibold">About CampusOne</h1>
+          <h1 className="text-2xl font-semibold">About Present Sir</h1>
           <p className="text-sm text-gray-500">
             Learn more about our platform and the team behind it
           </p>
@@ -35,38 +35,42 @@ export default function AboutPage() {
 
       <div className="mt-6 flex space-x-2 border-b bg-white rounded-t-lg px-4">
         <button
-          className={`px-4 py-3 text-sm font-medium ${activeTab === 'about'
-            ? 'border-b-2 border-gray-900'
-            : 'text-gray-500 hover:text-gray-700'
-            }`}
+          className={`px-4 py-3 text-sm font-medium ${
+            activeTab === 'about'
+              ? 'border-b-2 border-gray-900'
+              : 'text-gray-500 hover:text-gray-700'
+          }`}
           onClick={() => setActiveTab('about')}
         >
           About
         </button>
 
         <button
-          className={`px-4 py-3 text-sm font-medium ${activeTab === 'features'
-            ? 'border-b-2 border-gray-900'
-            : 'text-gray-500 hover:text-gray-700'
-            }`}
+          className={`px-4 py-3 text-sm font-medium ${
+            activeTab === 'features'
+              ? 'border-b-2 border-gray-900'
+              : 'text-gray-500 hover:text-gray-700'
+          }`}
           onClick={() => setActiveTab('features')}
         >
           Features
         </button>
         <button
-          className={`px-4 py-3 text-sm font-medium ${activeTab === 'support'
-            ? 'border-b-2 border-gray-900'
-            : 'text-gray-500 hover:text-gray-700'
-            }`}
+          className={`px-4 py-3 text-sm font-medium ${
+            activeTab === 'support'
+              ? 'border-b-2 border-gray-900'
+              : 'text-gray-500 hover:text-gray-700'
+          }`}
           onClick={() => setActiveTab('support')}
         >
           Support
         </button>
         <button
-          className={`px-4 py-3 text-sm font-medium ${activeTab === 'faq'
-            ? 'border-b-2 border-gray-900'
-            : 'text-gray-500 hover:text-gray-700'
-            }`}
+          className={`px-4 py-3 text-sm font-medium ${
+            activeTab === 'faq'
+              ? 'border-b-2 border-gray-900'
+              : 'text-gray-500 hover:text-gray-700'
+          }`}
           onClick={() => setActiveTab('faq')}
         >
           FAQ
