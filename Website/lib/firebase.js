@@ -3,22 +3,14 @@ import { getAuth, setPersistence, browserLocalPersistence } from 'firebase/auth'
 import { getFirestore } from 'firebase/firestore'
 
 // Hard-code the Firebase config for testing
-// const firebaseConfig = {
-//   apiKey: 'AIzaSyC6-KFXqY9Gf7YCYVEQpTSOVfl6iXSXKQ8',
-//   authDomain: 'vite-contact-b0a7a.firebaseapp.com',
-//   projectId: 'vite-contact-b0a7a',
-//   storageBucket: 'vite-contact-b0a7a.appspot.com', // Fixed storage bucket URL
-//   messagingSenderId: '715182976493',
-//   appId: '1:715182976493:web:5b44c8bc7a7ba04be7cbe4',
-// }
 const firebaseConfig = {
-  apiKey: "AIzaSyDNenS_J5qdbYDDaZwDAvd1wyFdQkUXtZE",
-  authDomain: "auth-28893.firebaseapp.com",
-  projectId: "auth-28893",
-  storageBucket: "auth-28893.firebasestorage.app",
-  messagingSenderId: "124159356790",
-  appId: "1:124159356790:web:28c1373e938aa1e8901457"
-};
+  apiKey: 'AIzaSyC6-KFXqY9Gf7YCYVEQpTSOVfl6iXSXKQ8',
+  authDomain: 'vite-contact-b0a7a.firebaseapp.com',
+  projectId: 'vite-contact-b0a7a',
+  storageBucket: 'vite-contact-b0a7a.appspot.com', // Fixed storage bucket URL
+  messagingSenderId: '715182976493',
+  appId: '1:715182976493:web:5b44c8bc7a7ba04be7cbe4',
+}
 
 // Log the config for debugging
 console.log('Firebase config being used:', {
