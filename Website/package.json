@@ -47,7 +47,6 @@
     "tailwindcss-animate": "^1.0.7",
     "web-vitals": "^5.0.1",
     "xlsx": "^0.18.5"
-
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
@@ -58,6 +57,6 @@
     "eslint-config-next": "15.3.1",
     "postcss": "^8.4.23",
     "sharp": "^0.34.2",
-    "tailwindcss": "^3.3.0"
+    "tailwindcss": "^3.4.17"
   }
 }

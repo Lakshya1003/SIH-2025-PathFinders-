@@ -250,7 +250,7 @@ export default function AttendanceTracker() {
       >
         <div className="p-4 bg-primary">
           <div className="flex justify-between items-center">
-            <div className="text-primary-foreground font-semibold">PresentSir Device</div>
+            <div className="text-primary-foreground font-semibold">Campus One Device</div>
             <div className="text-primary-foreground text-sm">
               {new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}
             </div>
@@ -357,11 +357,10 @@ export default function AttendanceTracker() {
                     </div>
                     <div className="flex space-x-2">
                       <motion.button
-                        className={`w-8 h-8 rounded-full flex items-center justify-center transition-colors ${
-                          student.status === "present"
-                            ? "bg-green-500 text-white"
-                            : "bg-green-100 text-green-600 hover:bg-green-200"
-                        }`}
+                        className={`w-8 h-8 rounded-full flex items-center justify-center transition-colors ${student.status === "present"
+                          ? "bg-green-500 text-white"
+                          : "bg-green-100 text-green-600 hover:bg-green-200"
+                          }`}
                         onClick={() => handleAttendanceChange(student.id, "present")}
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
@@ -369,11 +368,10 @@ export default function AttendanceTracker() {
                         <Check className="w-4 h-4" />
                       </motion.button>
                       <motion.button
-                        className={`w-8 h-8 rounded-full flex items-center justify-center transition-colors ${
-                          student.status === "absent"
-                            ? "bg-red-500 text-white"
-                            : "bg-red-100 text-red-600 hover:bg-red-200"
-                        }`}
+                        className={`w-8 h-8 rounded-full flex items-center justify-center transition-colors ${student.status === "absent"
+                          ? "bg-red-500 text-white"
+                          : "bg-red-100 text-red-600 hover:bg-red-200"
+                          }`}
                         onClick={() => handleAttendanceChange(student.id, "absent")}
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
@@ -435,18 +433,16 @@ export default function AttendanceTracker() {
                 {selectedClass.students.map((student) => (
                   <motion.div
                     key={student.id}
-                    className={`flex items-center justify-between p-2 border rounded-md ${
-                      student.status === "present" ? "bg-green-50" : "bg-red-50"
-                    }`}
+                    className={`flex items-center justify-between p-2 border rounded-md ${student.status === "present" ? "bg-green-50" : "bg-red-50"
+                      }`}
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.3 }}
                   >
                     <div className="flex items-center">
                       <div
-                        className={`w-8 h-8 rounded-full flex items-center justify-center mr-3 ${
-                          student.status === "present" ? "bg-green-100" : "bg-red-100"
-                        }`}
+                        className={`w-8 h-8 rounded-full flex items-center justify-center mr-3 ${student.status === "present" ? "bg-green-100" : "bg-red-100"
+                          }`}
                       >
                         <span
                           className={`font-medium ${student.status === "present" ? "text-green-600" : "text-red-600"}`}
@@ -510,7 +506,7 @@ export default function AttendanceTracker() {
       >
         <div className="p-2 bg-accent">
           <div className="flex justify-between items-center">
-            <div className="text-accent-foreground text-xs font-semibold">PresentSir App</div>
+            <div className="text-accent-foreground text-xs font-semibold">Campus One</div>
             <div className="text-accent-foreground text-xs">
               {new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}
             </div>
