@@ -4,7 +4,7 @@ import TeamSection from '../TeamSection'
 export default function AboutSection() {
   return (
     <div className="mt-0 rounded-b-lg border-x border-b bg-white p-6">
-      <h2 className="text-xl font-semibold">Welcome to Present Sir</h2>
+      <h2 className="text-xl font-semibold">Welcome to Campus One</h2>
       <p className="text-sm text-gray-500">
         The ultimate school management solution
       </p>
