@@ -10,14 +10,10 @@ export default function AboutSection() {
       </p>
 
       {/* Team Section */}
-      <section className="mt-8">
-        <TeamSection />
-      </section>
-
       <div className="mt-6">
         <h3 className="text-lg font-medium">Our Story</h3>
         <p className="mt-2 text-sm leading-relaxed text-gray-600">
-          Present Sir was founded with a simple mission: to transform the way
+          Campus One was founded with a simple mission: to transform the way
           schools manage their day-to-day operations, especially attendance
           tracking. We recognize that teachers spend valuable time on
           administrative tasks that could be better utilized for education. Our
@@ -25,7 +21,7 @@ export default function AboutSection() {
           what matters most - teaching and nurturing students.
         </p>
         <p className="mt-4 text-sm leading-relaxed text-gray-600">
-          The idea for Present Sir was born out of our founder's experience in
+          The idea for Campus one was born out of our founder's experience in
           the education sector, where he witnessed firsthand the challenges
           faced by schools in managing attendance, tracking student performance,
           and communicating with parents. By leveraging technology, we've

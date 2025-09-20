@@ -192,7 +192,7 @@ export default function DashboardLayout({ children }) {
                   />
                 </div>
                 <span className="ml-2 text-lg font-bold tracking-wide uppercase hidden md:block">
-                  Present Sir
+                  Campus One
                 </span>
               </div>
             </div>
@@ -204,9 +204,8 @@ export default function DashboardLayout({ children }) {
 
             {/* Right section with notifications and profile */}
             <div
-              className={`flex items-center justify-end space-x-2 md:space-x-4 ${
-                isMobile ? 'ml-1' : 'w-1/4'
-              }`}
+              className={`flex items-center justify-end space-x-2 md:space-x-4 ${isMobile ? 'ml-1' : 'w-1/4'
+                }`}
             >
               {/* Notifications */}
               <div className="relative" id="notifications-dropdown">
@@ -285,9 +284,8 @@ export default function DashboardLayout({ children }) {
 
         {/* Sidebar - Hidden on mobile unless toggled */}
         <aside
-          className={`fixed inset-y-0 left-0 w-64 bg-white shadow-lg transition-transform transform z-50 ${
-            sidebarOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0'
-          }`}
+          className={`fixed inset-y-0 left-0 w-64 bg-white shadow-lg transition-transform transform z-50 ${sidebarOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0'
+            }`}
           style={{ top: '64px', height: 'calc(100vh - 64px)' }}
         >
           <div className="flex flex-col h-full">
@@ -299,11 +297,10 @@ export default function DashboardLayout({ children }) {
                   <Link
                     key={item.name}
                     href={item.href}
-                    className={`flex items-center px-4 py-2.5 my-0.5 mx-2 rounded-md ${
-                      isActive
+                    className={`flex items-center px-4 py-2.5 my-0.5 mx-2 rounded-md ${isActive
                         ? 'bg-blue-50 text-blue-700'
                         : 'text-gray-700 hover:bg-gray-50'
-                    }`}
+                      }`}
                   >
                     <span className="mr-3 w-5 text-center">{item.icon}</span>
                     <span className="text-sm">{item.name}</span>

@@ -520,11 +520,10 @@ export default function DashboardHome() {
                     key={action.name}
                     href={action.href}
                   >
-                    <Card className={`h-full transition-all duration-300 hover:shadow-md border-0 rounded-xl ${
-                      action.highlight
+                    <Card className={`h-full transition-all duration-300 hover:shadow-md border-0 rounded-xl ${action.highlight
                         ? 'bg-gradient-to-br from-primary/10 to-primary/5 dark:from-primary/20 dark:to-primary/10 border-l-4 border-l-primary'
                         : 'bg-white dark:bg-gray-800'
-                    }`}>
+                      }`}>
                       <CardContent className="p-5">
                         <div className="mb-4 flex items-center justify-center h-12 w-12 bg-primary/10 rounded-full">
                           {action.icon}
@@ -570,12 +569,11 @@ export default function DashboardHome() {
                             <p className="font-medium text-gray-900 dark:text-white">{item.title}</p>
                             <div className="flex items-center mt-1 sm:mt-0">
                               <Badge
-                                className={`mr-2 px-2 py-0.5 text-xs capitalize ${
-                                  item.type === 'attendance' ? 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300' :
-                                  item.type === 'schedule' ? 'bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-300' :
-                                  item.type === 'payment' ? 'bg-emerald-100 text-emerald-800 dark:bg-emerald-900 dark:text-emerald-300' :
-                                  'bg-amber-100 text-amber-800 dark:bg-amber-900 dark:text-amber-300'
-                                }`}
+                                className={`mr-2 px-2 py-0.5 text-xs capitalize ${item.type === 'attendance' ? 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300' :
+                                    item.type === 'schedule' ? 'bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-300' :
+                                      item.type === 'payment' ? 'bg-emerald-100 text-emerald-800 dark:bg-emerald-900 dark:text-emerald-300' :
+                                        'bg-amber-100 text-amber-800 dark:bg-amber-900 dark:text-amber-300'
+                                  }`}
                               >
                                 {item.type}
                               </Badge>
